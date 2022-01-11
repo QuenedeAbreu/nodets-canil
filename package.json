@@ -1,0 +1,25 @@
+{
+  "name": "canil",
+  "version": "1.0.0",
+  "description": "Projeto para estudo de node",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon -e ts,js,mst,mustache src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Quenede Abreu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.13.0",
+    "sequelize-cli": "^6.3.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/sequelize": "^4.28.11",
+    "nodemon": "^2.0.15"
+  }
+}

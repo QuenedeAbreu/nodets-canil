@@ -5,7 +5,11 @@ import { Pet } from '../models/pet';
 export const search = (req: Request, res: Response) => {
   let namePet: string = req.query.q as string;
   let list = Pet.getFromName(namePet);
-  // res.send('fishes');
+
+  if (!namePet) {
+    res.redirect('/');
+    return;
+  }
   res.render('pages/page', {
     menu: createMenuObject(''),
     list,

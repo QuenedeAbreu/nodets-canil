@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { createMenuObject } from '../helpers/createMenuObject';
-import { Pet } from '../models/pet';
+import { Pet } from '../models/Pet';
 
 export const home = (req: Request, res: Response) => {
   let list = Pet.getAll();
